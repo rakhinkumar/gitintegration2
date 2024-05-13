@@ -13,6 +13,7 @@ public class Gitintegration {
 		public String baseUrl="https://www.facebook.com/login/";
 		String driverPath="C:\\Users\\Rakhi N Kumar\\Downloads\\geckodriver-v0.26.0-win64//geckodriver.exe";
 		public WebDriver driver;
+		System.out.println("helloo");
 		
 	@BeforeTest
 	public void launchBrowser() {
@@ -26,6 +27,7 @@ public class Gitintegration {
 		driver.findElement(By.name("email")).sendKeys("rakhi.nkumar");
 		driver.findElement(By.name("pass")).sendKeys("qw1234");
 		driver.findElement(By.name("login")).click();
+		
 	}
 	@AfterTest
 	public void terminateBrowser() {
